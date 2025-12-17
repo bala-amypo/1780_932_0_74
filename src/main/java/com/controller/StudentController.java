@@ -24,4 +24,9 @@ public class StudentController {
     {
         return ser.getStudents();
     }
+    @GetMapping("/getStudents")
+    public 
+    {
+        return ser.getStudents();
+    }
 }
