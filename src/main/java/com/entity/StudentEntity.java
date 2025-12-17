@@ -1,15 +1,34 @@
 package com.example.demo.entity;
-import jakarta.presistence.Entity;
-import jakarta.presistence.GeneratedValue;
-import jakarta.presistence.GeneratedType;
-import jakarta.presistence.Id;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
 @Entity
-public class StudentEntity{
-    @id
-    @GeneratedValue(strategy = GeneratedType.IDENTITY)
+public class StudentEntity {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private string name;
-    private string email;
+    private String name;
+    private String email;
     private float cgpa;
 
+    public void setName(String name)
+    {
+        this.name=name;
+    }
+    public void getName()
+    {
+        return this.name;
+    }
+    public void setEmail(String email)
+    {
+        this.email=email;
+    }
+    public void getEmail()
+    {
+        r
+    }
 }
